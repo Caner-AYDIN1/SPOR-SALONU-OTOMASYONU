@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>GİRİŞ | KAYIT OL SAYFASI</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="frm1" action="kaydet.asp" method="POST">
+
+                <h1>HESAP OLUŞTUR</h1>
+                <div class="social-icons">
+           
+                </div>
+                <input type="text" name="Ad" id="Ad" placeholder="Kullanıcı Adı">
+                <input type="email" name="EPosta" id="EPosta" placeholder="Email">
+                <input type="password" name="Sifre" id="Sifre" placeholder="Şifre">
+                <button type="submit" onclick="kayitOl()">Kayıt Ol</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form id="frm1" action="giris.asp" method="POST">
+                <h1>Giriş Yap</h1>
+                <div class="social-icons">
+                   
+                </div>
+               
+                <input type="email" name="EPosta" placeholder="Email">
+                <input type="password" name="Sifre" placeholder="Şifre">
+                
+                <button type="submit" onclick="kayit()">Giriş Yap</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Hoşgeldiniz</h1>
+                    <p>
+                        Tüm site özelliklerini kullanmak için kişisel bilgilerinizi girin.</p>
+                    <button class="hidden" id="login">Giriş Yap</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Merhaba</h1>
+                    <p>Tüm site özelliklerini kullanmak için kişisel bilgilerinizle kaydolun.</p>
+                    <button class="hidden" id="register">Kayıt Ol</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="scr.js"></script>
+</body>
+
+</html>

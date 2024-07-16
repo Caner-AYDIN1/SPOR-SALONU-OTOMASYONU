@@ -1,0 +1,43 @@
+body {
+	background-image: url('../img/man.jpg'); /* Resmin yolu düzeltilmeli */
+	background-size: cover;
+	background-position: center;
+	color: black;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	background-color: white;
+	border-collapse: collapse;
+	
+	width: 500px; /* Form tablosunun genişliği azaltıldı */
+	margin: auto; /* Tabloyu sayfanın ortasına hizalama */
+	margin-top: 50px; /* Yukarıda biraz daha yer kaplaması sağlandı */
+	margin-bottom: 20px;
+}
+
+table, th, td {
+	border: 2px solid black;
+}
+
+th, td {
+	padding:8px;
+	text-align: center;
+	font-size: 12px;
+}
+
+th {
+	background-color: #888888;
+	color: white;
+	font-weight: bold;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+tr:hover {
+	background-color: #ddd;
+}

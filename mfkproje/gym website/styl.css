@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(resim.jpg);
+    font-family: sans-serif;
+}
+.menu-bar{
+    background: #58595b;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover{
+    background: #5e5e5b;
+    border-radius: 10px;
+}
